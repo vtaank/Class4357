@@ -1,0 +1,43 @@
+--------------------------------------------------------------------
+1. What is the _mask value for LED1? 
+   What is the address of FIOSET?
+
+
+Mask value for LED1:
+Address for FIOSET= 0x2009 C018
+
+--------------------------------------------------------------------
+2. What is the RS232 Frame?
+
+The RS-232 serial communication protocol is a standard protocol used in asynchronous serial communication. It is the primary protocol used over modem lines.
+A frame is a complete and non divisible packet of bits. A frame includes both information (e.g., data and characters) and overhead (e.g., start bit, error checking and stop bits). 
+In asynchronous serial protocols such as RS-232, the frame consists of one start bit, seven or eight data bits, parity bits, and stop bits. 
+A timing diagram for an RS-232 frame consisting of one start bit, 7 data bits, one parity bits and two stop bits
+
+
+--------------------------------------------------------------------
+3. Explain the start and stop conditions of i2c?
+
+Start condition:	The chip issuing the Start condition first pulls the SDA (data) line low, and next pulls the SCL (clock) line low.
+Stop condition:	The Bus Master first releases the SCL and then the SDA line.
+
+
+
+
+--------------------------------------------------------------------
+4. Is the i2c acknowledge SDA LOW or SDA HIGH?
+
+I2C uses two lines, one for synchronization clock (SCL) and one for data and acknowledgement (SDA).
+SDA low
+
+
+
+--------------------------------------------------------------------
+5. Tell me about the DDR3 write leveling Concept in one sentence.  
+   (ref: slides)
+With DDR3 the memory signals can be allowed to driven to each bank of memory or DIMM on a fly-by basis. This allows for easier routing on the board and single termination
+
+
+
+
+END

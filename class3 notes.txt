@@ -1,0 +1,19 @@
+I2C bus.
+
+
+If clk (SCLK) is high, data (SDA) is stable. If clk is low, ignore the data
+
+Master controlls the clk. Master decides if slave needs to read or write. 
+
+default data bus is pullup. Master does nothing. If transmit 1, Slave does no action. If transmit 0, slave pulls down.
+
+
+I2C read:
+
+
+Cortex M family (no ROM code??):
+
+the compiled code, each 4 bytes stores some specific information. Some are reserved and software can store custom data there like CRC of binary.
+first 4 bytes - Stack Pointer
+second 4 bytes - Reset Handler
+
